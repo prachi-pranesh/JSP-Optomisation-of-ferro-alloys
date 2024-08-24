@@ -102,6 +102,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 This project was developed to assist in the optimization of alloy additions in the metallurgical process, with a focus on cost-effectiveness, precision, and improving overall operational efficiency.
 
 
-### Instructions:
-- **Customization**: Modify this `README.md` file as needed, especially if you add more features or change the project structure.
-- **Deployment**: If there are additional steps needed for deploying the website or using the lime calculation tool, you might want to include those in the appropriate sections.

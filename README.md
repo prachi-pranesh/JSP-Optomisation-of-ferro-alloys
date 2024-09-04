@@ -74,8 +74,8 @@ To run this project, you need to have the following dependencies installed:
 ## Instructions:
 1. Clone the repository using:
 ```
-git clone https://github.com/yourusername/alloy-quantity-estimation.git
-cd alloy-quantity-estimation
+git clone https://github.com/prachi-pranesh/JSP-Optomisation-of-ferro-alloys.git
+cd JSP-Optomisation-of-ferro-alloys/JSPL Internship project_model ml
 ```
 
 2. Train the model using:

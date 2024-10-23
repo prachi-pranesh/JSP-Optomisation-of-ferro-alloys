@@ -48,28 +48,30 @@ Ensure the following Excel files are prepared and structured correctly:
 Execute the Python script `lrf_optimization.py`:
 
 
-# Alloy Quantity Estimation Model
+# Project: Linear Regression for Resource Optimization in Steel Production
 
-## Overview
+This project implements a linear regression model to optimize the quantity of specific ores needed to achieve desired element compositions (grades) in steel production. The goal is to predict the amount of each ore to be added, based on the initial composition of raw steel, using historical data of past efficient calculations.
 
-This project aims to develop a machine learning model to estimate the optimal quantity of alloys required to achieve a desired yield in metallurgical processes. The model consists of two submodels:
+## Key Features:
+- **Independent Models**: Each ore is modeled independently with its own linear regression, assuming no dependency between different ores.
+- **Linear Relationship**: The model assumes a direct linear relationship between the ore amount and the target element's final composition.
+- **Cost-Efficiency**: The model is trained on historical data that represents the most cost-efficient practices used by industry professionals.
+- **Grade Flexibility**: The application can predict the necessary ore quantities for any steel grade.
 
-1. **Chemistry Estimation Submodel**: Predicts the resulting chemical composition when a specific combination of alloys is added to the ladle.
-2. **Alloy Quantity Optimization Submodel**: Utilizes the first submodel to determine the optimal amount of each alloy required to achieve the desired yield for a given grade while considering cost-effectiveness.
+## Usage:
+- Input the initial composition and the target grade.
+- The model will output the required quantities of each ore to achieve the desired composition.
 
-## Features
+This tool simplifies the optimization process, providing accurate, cost-effective solutions for real-world steel production.
 
-- **Predictive Modeling**: Estimate the chemical composition based on alloy inputs.
-- **Optimization**: Calculate the most cost-effective alloy quantities to achieve the desired yield.
-- **Customizable**: Adjust the model parameters and training data to suit specific metallurgical processes.
 
 ## Requirements
 
 To run this project, you need to have the following dependencies installed:
 
-- `tensorflow==2.11.0`
-- `numpy==1.23.5`
-- `pandas==1.4.4`
+- `scikit-learn==1.3`
+- `numpy==1.23`
+- `pandas==1.4`
 
 ## Instructions:
 1. Clone the repository using:

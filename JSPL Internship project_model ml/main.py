@@ -8,9 +8,8 @@ df = pd.read_excel(r"data_sheet.xlsx",sheet_name=1)
 y,x=load_and_preprocess_data(df)
 
 def Linearfit(X,Y):
-    X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.0625)
     regr = LinearRegression()   
-    regr.fit(X_train, y_train) 
+    regr.fit(X, Y) 
     return regr
 
 SiMn_pred=Linearfit(x,y[:,0])

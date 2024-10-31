@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression 
 from utils import load_and_preprocess_data
 
-df = pd.read_excel(r"data_sheet.xlsx",sheet_name=1)   
+df = pd.read_excel(r"data_sheet.xlsx")   
 y,x=load_and_preprocess_data(df)
 
 def Linearfit(X,Y):
